@@ -1,86 +1,56 @@
-body{
-  background-color:rgb(2, 17, 43);
-  font-family:  'Uncial Antiqua', cursive;
-  color:white;
-  background-image: url('https://videos.openai.com/vg-assets/assets%2Ftask_01jttz6abxepwapqgtwv8wnpbm%2F1746809416_img_0.webp?st=2025-05-09T14%3A56%3A32Z&se=2025-05-15T15%3A56%3A32Z&sks=b&skt=2025-05-09T14%3A56%3A32Z&ske=2025-05-15T15%3A56%3A32Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=iDCK2awnwEU1jJw%2BN5k58PUACp3UAnVBI2H3o1CKLOY%3D&az=oaivgprodscus');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.one{
-  display:inline-block;
-  width:600px;
-  margin-right: 50px;
-}
-
-.two{
-  display:inline-block;
-  width:600px;
-  text-align:right;
-}
-
-.all{
-  display: flex;
-justify-content: center;
-width:1200px;
-}
-
-h2{
-  animation: flicker 1.5s infinite alternate;
+.shadowed-title {
+  text-shadow: 3px 3px 6px rgba(251, 176, 1, 0.6);
+  font-size: 36px;
   color: white;
-  text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #f0f;
-}
-@keyframes flicker {
-  0% { opacity: 1; }
-  50% { opacity: 0.4; }
-  100% { opacity: 1; }
+  text-align: center;
 }
 
-a{
-  text-decoration: none;
+.otvet {
+      opacity: 0;
+      animation: showText 1s forwards;
+      animation-delay: 30s; /* затримка 60 секунд */
+      font-size:24px;
+      text-align: center;
+    }
+
+    @keyframes showText {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .otvet:hover{
+      font-size:36px;
+    }
+
+    .prikol{
+      text-align:center;
+    }
+.shadowed-title {
+  text-shadow: 3px 3px 6px rgba(251, 176, 1, 0.6);
+  font-size: 36px;
   color: white;
-  border: 2px solid white;
-  border-radius: 10px;
+  text-align: center;
 }
 
-.magic::before {
-  content: "Вінгардіум левіосса"; 
-  opacity: 0; /* Спочатку текст невидимий */
-  transition: opacity 0.3s ease; /* Плавний ефект появи */
-}
+.otvet {
+      opacity: 0;
+      animation: showText 1s forwards;
+      animation-delay: 30s; /* затримка 60 секунд */
+      font-size:24px;
+      text-align: center;
+    }
 
-.magic:hover::before {
-  opacity: 1; /* Текст стає видимим при наведенні */
-}
+    @keyframes showText {
+      to {
+        opacity: 1;
+      }
+    }
 
-.magic1::before {
-  content: "Протего"; 
-  opacity: 0; /* Спочатку текст невидимий */
-  transition: opacity 0.3s ease; /* Плавний ефект появи */
-}
+    .otvet:hover{
+      font-size:36px;
+    }
 
-.magic1:hover::before {
-  opacity: 1; /* Текст стає видимим при наведенні */
-}
-
-.magic2::before {
-  content: "Репаро"; 
-  opacity: 0; /* Спочатку текст невидимий */
-  transition: opacity 0.3s ease; /* Плавний ефект появи */
-}
-
-.magic2:hover::before {
-  opacity: 1; /* Текст стає видимим при наведенні */
-}
-
-.brdr{
-  border: 2px dashed white;
-  border-radius: 2px;
-}
-
-.magic, .magic1, .magic2{
-  text-align:center;
-}
-
-
+    .prikol{
+      text-align:center;
+    }
